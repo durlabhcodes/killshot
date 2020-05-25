@@ -1,2 +1,2 @@
 # killshot
-Interactive CLI tool to kill programs
+A ruthless but interactive CLI tool to kill processes
