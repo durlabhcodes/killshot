@@ -17,7 +17,6 @@ func main() {
 	//TODO - Will be using later
 	//	operatingSystem := runtime.GOOS
 
-	//output, cmdError := exec.Command("ps aux | grep " + *procName).Output()
 	psCommand := exec.Command("ps", "aux")
 	grepCommand := exec.Command("grep", *procName)
 
@@ -29,5 +28,4 @@ func main() {
 
 	psCommand.Wait()
 	grepCommand.Wait()
-	//	fmt.Println(string(grepCommandPipe))
 }
